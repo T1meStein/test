@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu avec boutons et images</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+
+  /* Conteneur pour les boutons */
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espace entre les boutons */
+    margin-bottom: 20px;
+  }
+
+  /* Styles des boutons */
+  .menu-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .menu-button:hover {
+    background-color: #2980b9;
+  }
+
+  /* Conteneur pour chaque bouton + image */
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Image d’aperçu */
+  .menu-item img {
+    margin-top: 10px;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-container">
+  <div class="menu-item">
+    <button class="menu-button">Bouton 1</button>
+    <img src="https://via.placeholder.com/150" alt="Aperçu 1">
+  </div>
+  <div class="menu-item">
+    <button class="menu-button">Bouton 2</button>
+    <img src="https://via.placeholder.com/150" alt="Aperçu 2">
+  </div>
+  <div class="menu-item">
+    <button class="menu-button">Bouton 3</button>
+    <img src="https://via.placeholder.com/150" alt="Aperçu 3">
+  </div>
+</div>
+
+</body>
+</html>
